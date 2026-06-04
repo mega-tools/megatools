@@ -1,0 +1,1770 @@
+[
+  {
+    "_id": "t_1778974171282_n1hy",
+    "trackingCode": "ADMIN01",
+    "originalId": "s_1778912980074",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-16T23:29:31.282Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778974171283_hr6v",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778973056548",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-16T23:29:31.283Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778975547726_t4it",
+    "trackingCode": "ADMIN01",
+    "originalId": "s_1778974241461",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-16T23:52:27.726Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778975547727_3s3m",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778974268812",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-16T23:52:27.728Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778976677125_3az5",
+    "trackingCode": "ADMIN01",
+    "originalId": "s_1778975553882",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T00:11:17.125Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778976677127_3xf4",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778975600114",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T00:11:17.127Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778976724930_vfpd",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778976716153",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T00:12:04.930Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778976724932_bmak",
+    "trackingCode": "ADMIN01",
+    "originalId": "s_1778976716519",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T00:12:04.932Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778976860680_gyi2",
+    "trackingCode": "ADMIN01",
+    "originalId": "s_1778976727162",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T00:14:20.680Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778976860681_cw5p",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778976743978",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T00:14:20.681Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778981549899_3ghj",
+    "trackingCode": "ADMIN01",
+    "originalId": "s_1778977282268",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T01:32:29.899Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778981549902_nni3",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778977344757",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T01:32:29.902Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778981549905_r3n5",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1778980358783",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T01:32:29.905Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778981624459_2xod",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1778981570807",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T01:33:44.459Z",
+    "clearedBy": "u_mod_001",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778981647598_v5al",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778981559693",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T01:34:07.598Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778982438903_6wbz",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778981654224",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T01:47:18.903Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778982438905_eu1k",
+    "trackingCode": "xm9n3pq2w",
+    "originalId": "s_1778981702206",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T01:47:18.905Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778982438906_10hb",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1778981717414",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T01:47:18.906Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778983998883_s3hw",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778982459040",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:13:18.883Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778983998884_qwo0",
+    "trackingCode": "xm9n3pq2w",
+    "originalId": "s_1778982488566",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:13:18.884Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778983998885_7f0p",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1778982505558",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:13:18.885Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778984104489_0esh",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778984091229",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:15:04.489Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778984104491_3a4t",
+    "trackingCode": "xm9n3pq2w",
+    "originalId": "s_1778984095760",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:15:04.491Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778984104493_u6d5",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1778984097873",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:15:04.493Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778984973694_1ymz",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778984109453",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:29:33.694Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778984973695_e9u3",
+    "trackingCode": "xm9n3pq2w",
+    "originalId": "s_1778984116764",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:29:33.695Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778984973697_cwms",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1778984119129",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:29:33.697Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778986186029_77dt",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778984979565",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:49:46.029Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778986186031_z09v",
+    "trackingCode": "xm9n3pq2w",
+    "originalId": "s_1778984983406",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:49:46.031Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778986186033_tiue",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1778984988811",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:49:46.033Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778986186037_yf24",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778985437535",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:49:46.037Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778986186039_sxva",
+    "trackingCode": "xm9n3pq2w",
+    "originalId": "s_1778985444680",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:49:46.039Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778986186040_kjwj",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1778985450405",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T02:49:46.040Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778986804382_zr2a",
+    "trackingCode": "xm9n3pq2w",
+    "originalId": "s_1778986199391",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Unknown"
+    },
+    "deletedAt": "2026-05-17T03:00:04.382Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778986804384_yyjx",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778986205370",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Unknown"
+    },
+    "deletedAt": "2026-05-17T03:00:04.384Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778986804386_zxb3",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1778986208563",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Unknown"
+    },
+    "deletedAt": "2026-05-17T03:00:04.386Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778986804387_s22s",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778986243678",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T03:00:04.387Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1778986804393_iyrt",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778986246807",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-17T03:00:04.393Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779120332114_vbsp",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1778989415396",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-18T16:05:32.114Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779120332116_eyo4",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779119662393",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-18T16:05:32.116Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779164177686_cmxl",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1779120337378",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T04:16:17.686Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779171803217_mc2h",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779164216657",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T06:23:23.217Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779171803219_70mb",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779164560266",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T06:23:23.219Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779172979073_7acj",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779171808494",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T06:42:59.073Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779177107010_o4of",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779172986026",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T07:51:47.010Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779182724483_iz41",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779177165585",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T09:25:24.483Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779182724485_73ku",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779178008471",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T09:25:24.485Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779182724486_p7e3",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779182021607",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-19T09:25:24.486Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779182724487_sqde",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779182021712",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-19T09:25:24.487Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779182865741_ri8o",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779182730799",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T09:27:45.741Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779182972596_qp2v",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779182915672",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T09:29:32.596Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779183177671_ioe5",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779182973141",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-19T09:32:57.671Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779183177672_4cdc",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779182973275",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-19T09:32:57.672Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779183549630_fg39",
+    "trackingCode": "a7ysdbsvf",
+    "originalId": "s_1779183178988",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Firefox"
+    },
+    "deletedAt": "2026-05-19T09:39:09.630Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779183549631_t5sx",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779183179142",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Safari"
+    },
+    "deletedAt": "2026-05-19T09:39:09.631Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779183549632_yrdt",
+    "trackingCode": "xm9n3pq2w",
+    "originalId": "s_1779183179297",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Edge"
+    },
+    "deletedAt": "2026-05-19T09:39:09.632Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779183549634_u8vx",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779183179455",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-19T09:39:09.634Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779184080489_ei7p",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1779183549862",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-19T09:48:00.489Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779184080490_lco4",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1779183549971",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-19T09:48:00.490Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779184080491_flzc",
+    "trackingCode": "xm9n3pq2w",
+    "originalId": "s_1779183550273",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Firefox"
+    },
+    "deletedAt": "2026-05-19T09:48:00.491Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779185775554_euzv",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1779184080977",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-19T10:16:15.554Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779185775555_yqs8",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1779184081228",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-19T10:16:15.555Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779185775556_npzy",
+    "trackingCode": "xm9n3pq2w",
+    "originalId": "s_1779184081764",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Firefox"
+    },
+    "deletedAt": "2026-05-19T10:16:15.556Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779177012292_eot5",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1779185776053",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-19T07:50:12.292Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779177012294_fzrm",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1779185776266",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-19T07:50:12.294Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779177012296_5zae",
+    "trackingCode": "xm9n3pq2w",
+    "originalId": "s_1779185776543",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Firefox"
+    },
+    "deletedAt": "2026-05-19T07:50:12.296Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779177012297_z85a",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1779186464615",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-19T07:50:12.297Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779177012299_ifmn",
+    "trackingCode": "zt7p5hw3n",
+    "originalId": "s_1779186464774",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-19T07:50:12.299Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779177012300_nqz8",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779174968982",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T07:50:12.300Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779177012301_v8yn",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779174970974",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T07:50:12.301Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779177012303_oihe",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779174979228",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T07:50:12.303Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779177012304_g0mi",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779175320298",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T07:50:12.304Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779177012305_rivv",
+    "trackingCode": "9gggqfpz",
+    "originalId": "s_1779174654334",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T07:50:12.305Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779239189319_5n8d",
+    "trackingCode": "m4g3peb9",
+    "originalId": "s_1779185525569",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-20T01:06:29.319Z",
+    "clearedBy": "u_1779176318109",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779239189321_vrv2",
+    "trackingCode": "m4g3peb9",
+    "originalId": "s_1779239145149",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-20T01:06:29.321Z",
+    "clearedBy": "u_1779176318109",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779241794333_mfmq",
+    "trackingCode": "m4g3peb9",
+    "originalId": "s_1779239194488",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-20T01:49:54.333Z",
+    "clearedBy": "u_1779176318109",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779176109392_nb5y",
+    "trackingCode": "m4g3peb9",
+    "originalId": "s_1779241799805",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-19T07:35:09.392Z",
+    "clearedBy": "u_1779176318109",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779922830822_2m40",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779177018703",
+    "activity": "Auto-pruned (7 days old)",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-27T23:00:30.822Z",
+    "clearedBy": "system",
+    "manualCleared": false
+  },
+  {
+    "_id": "t_1779922830823_1vvx",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779177082724",
+    "activity": "Auto-pruned (7 days old)",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-27T23:00:30.823Z",
+    "clearedBy": "system",
+    "manualCleared": false
+  },
+  {
+    "_id": "t_1779922830824_h9ks",
+    "trackingCode": "9gggqfpz",
+    "originalId": "s_1779178400694",
+    "activity": "Auto-pruned (7 days old)",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-27T23:00:30.824Z",
+    "clearedBy": "system",
+    "manualCleared": false
+  },
+  {
+    "_id": "t_1779922830825_k7a1",
+    "trackingCode": "m4g3peb9",
+    "originalId": "s_1779176126119",
+    "activity": "Auto-pruned (7 days old)",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-27T23:00:30.825Z",
+    "clearedBy": "system",
+    "manualCleared": false
+  },
+  {
+    "_id": "t_1779922830826_7jvn",
+    "trackingCode": "m4g3peb9",
+    "originalId": "s_1779178814204",
+    "activity": "Auto-pruned (7 days old)",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-27T23:00:30.826Z",
+    "clearedBy": "system",
+    "manualCleared": false
+  },
+  {
+    "_id": "t_1779922830827_odxn",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779290266510",
+    "activity": "Auto-pruned (7 days old)",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-27T23:00:30.827Z",
+    "clearedBy": "system",
+    "manualCleared": false
+  },
+  {
+    "_id": "t_1779924363809_ks5j",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779923279216",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-27T23:26:03.809Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779925624693_u71f",
+    "trackingCode": "7shmvgng",
+    "originalId": "s_1779925579034",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Safari"
+    },
+    "deletedAt": "2026-05-27T23:47:04.693Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779925624695_l2yj",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779925578154",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-27T23:47:04.695Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779925624696_cuxi",
+    "trackingCode": "7shmvgng",
+    "originalId": "s_1779925495371",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-27T23:47:04.696Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779925624697_i1c6",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779925495361",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-27T23:47:04.697Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779925624698_uf50",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779925495348",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-27T23:47:04.698Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779925624699_ywpz",
+    "trackingCode": "unknown",
+    "originalId": "s_1779925179095",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": ""
+    },
+    "deletedAt": "2026-05-27T23:47:04.699Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779925624700_ewdj",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779924700141",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Safari Mobile"
+    },
+    "deletedAt": "2026-05-27T23:47:04.700Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779925624701_8t2n",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779924528851",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-27T23:47:04.701Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779939435913_02c3",
+    "trackingCode": "7shmvgng",
+    "originalId": "s_1779939243278",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Safari/17.0"
+    },
+    "deletedAt": "2026-05-28T03:37:15.913Z",
+    "clearedBy": "u_1779925398884",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779939435915_f27d",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779939136638",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Firefox/115.0"
+    },
+    "deletedAt": "2026-05-28T03:37:15.915Z",
+    "clearedBy": "u_1779925398884",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779939478967_mkzx",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779939073623",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome/120.0"
+    },
+    "deletedAt": "2026-05-28T03:37:58.967Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779939478969_j2rd",
+    "trackingCode": "unknown",
+    "originalId": "s_1779938708860",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": ""
+    },
+    "deletedAt": "2026-05-28T03:37:58.969Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779939478969_wzlc",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779938705632",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Test Browser"
+    },
+    "deletedAt": "2026-05-28T03:37:58.969Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779939478970_r7g8",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779938214558",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T03:37:58.970Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779939478971_jg7d",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779930498563",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T03:37:58.971Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779939478972_wtb5",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779930337924",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T03:37:58.972Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779939754054_v4ai",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779939488561",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T03:42:34.054Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779939922763_uisa",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779939771651",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome/120.0"
+    },
+    "deletedAt": "2026-05-28T03:45:22.763Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779949529952_51ww",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779940083074",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T06:25:29.952Z",
+    "clearedBy": "u_1779925398884",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779950934731_zcgj",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779950489243",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome/120.0"
+    },
+    "deletedAt": "2026-05-28T06:48:54.731Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779950934732_p840",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779950287816",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome/120.0"
+    },
+    "deletedAt": "2026-05-28T06:48:54.732Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779950934733_u4xi",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779950055401",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Test"
+    },
+    "deletedAt": "2026-05-28T06:48:54.733Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779950934734_3ria",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779949576386",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T06:48:54.734Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779950934735_ma35",
+    "trackingCode": "demo_visitor",
+    "originalId": "s_1779949491963",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T06:48:54.735Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779950934736_dfyg",
+    "trackingCode": "test_default",
+    "originalId": "s_1779949168993",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T06:48:54.736Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779958129335_9rcb",
+    "trackingCode": "7shmvgng",
+    "originalId": "s_1779950955228",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Safari"
+    },
+    "deletedAt": "2026-05-28T08:48:49.335Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779958129336_c2gl",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779950953970",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Firefox"
+    },
+    "deletedAt": "2026-05-28T08:48:49.336Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779958129337_kzvr",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779950952375",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-28T08:48:49.337Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779944768978_l7wy",
+    "trackingCode": "index.html",
+    "originalId": "s_1779969196260",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T05:06:08.978Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779944768980_mxmg",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779967661859",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-28T05:06:08.982Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779944768983_nvmk",
+    "trackingCode": "7shmvgng",
+    "originalId": "s_1779964738199",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Safari"
+    },
+    "deletedAt": "2026-05-28T05:06:08.983Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779944768984_yv6g",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779964737928",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Firefox"
+    },
+    "deletedAt": "2026-05-28T05:06:08.984Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779944768985_8ol5",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779964737552",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-28T05:06:08.985Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779944768986_tv7c",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779959958737",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Firefox"
+    },
+    "deletedAt": "2026-05-28T05:06:08.986Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779944768987_bgf6",
+    "trackingCode": "default",
+    "originalId": "s_1779944714067",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T05:06:08.987Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779944768988_6rqx",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779943311617",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Chrome"
+    },
+    "deletedAt": "2026-05-28T05:06:08.988Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779948377074_ax5f",
+    "trackingCode": "default",
+    "originalId": "s_1779945079292",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T06:06:17.074Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779948377075_c1ji",
+    "trackingCode": "index.html",
+    "originalId": "s_1779944824878",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T06:06:17.075Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779948377078_ao5d",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779944799437",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T06:06:17.078Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779951749677_d8fi",
+    "trackingCode": "7shmvgng",
+    "originalId": "s_1779951722807",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Test"
+    },
+    "deletedAt": "2026-05-28T07:02:29.677Z",
+    "clearedBy": "u_1779925398884",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779951749679_pffh",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779951722751",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Test"
+    },
+    "deletedAt": "2026-05-28T07:02:29.680Z",
+    "clearedBy": "u_1779925398884",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779951819067_uwsa",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779951722800",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Test"
+    },
+    "deletedAt": "2026-05-28T07:03:39.067Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779951819068_np5u",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779948631910",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T07:03:39.068Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779951819069_w0gg",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779948628774",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T07:03:39.069Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779969702034_lntn",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779953351682",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T12:01:42.035Z",
+    "clearedBy": "u_1779925398884",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779969702036_jks4",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779951823466",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T12:01:42.036Z",
+    "clearedBy": "u_1779925398884",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779975367090_ninp",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779969703869",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T13:36:07.090Z",
+    "clearedBy": "u_1779925398884",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779978936548_s5xr",
+    "trackingCode": "default",
+    "originalId": "s_1779953227490",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T14:35:36.548Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779978936549_7uq8",
+    "trackingCode": "default",
+    "originalId": "s_1779953188954",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T14:35:36.549Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1779978936550_g30f",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779951922346",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-05-28T14:35:36.550Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1780684223984_1bjc",
+    "trackingCode": "pmvzqsye",
+    "originalId": "s_1779982727184",
+    "activity": "Auto-pruned (7 days old)",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-06-05T18:30:23.984Z",
+    "clearedBy": "system",
+    "manualCleared": false
+  },
+  {
+    "_id": "t_1780684223986_hu4m",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1779978940049",
+    "activity": "Auto-pruned (7 days old)",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-06-05T18:30:23.986Z",
+    "clearedBy": "system",
+    "manualCleared": false
+  }
+]

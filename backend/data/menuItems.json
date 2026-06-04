@@ -1,0 +1,45 @@
+[
+  {
+    "pageUrl": "http://localhost:5000/demo/gmail/ka4rb4lf7_7xy4btnhn",
+    "groupName": "Mega Tools",
+    "groupId": "mega-tools",
+    "location": "sidebar",
+    "buttonName": "Gmail Demo",
+    "_id": "m_1779175567859",
+    "created_at": "2026-05-19T07:26:07.859Z"
+  },
+  {
+    "pageUrl": "http://localhost:5000/demo/maps/ka4rb4lf7_3xef8hy7g",
+    "groupName": "Mega Tools",
+    "groupId": "mega-tools",
+    "location": "sidebar",
+    "buttonName": "Maps Demo",
+    "_id": "m_1779175567912",
+    "created_at": "2026-05-19T07:26:07.912Z"
+  },
+  {
+    "pageUrl": "http://localhost:5000/demo/message/ka4rb4lf7_cfmqpdyd6",
+    "groupName": "Mega Service",
+    "groupId": "mega-service",
+    "location": "sidebar",
+    "buttonName": "Message Demo",
+    "_id": "m_1779175567993",
+    "created_at": "2026-05-19T07:26:07.993Z"
+  },
+  {
+    "pageUrl": "http://localhost:5000/demo/gmail/ka4rb4lf7_7xy4btnhn",
+    "groupName": "Mega Service",
+    "groupId": "mega-service",
+    "location": "sidebar",
+    "buttonName": "Gmail v2",
+    "_id": "m_1779175568057",
+    "created_at": "2026-05-19T07:26:08.057Z"
+  },
+  {
+    "pageUrl": "https://www.wikipedia.org",
+    "location": "sidebar",
+    "buttonName": "Wikipedia",
+    "_id": "m_1779175568128",
+    "created_at": "2026-05-19T07:26:08.128Z"
+  }
+]

@@ -1,0 +1,97 @@
+const { MongoClient } = require('mongodb');
+const fs = require('fs');
+const path = require('path');
+
+const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017';
+const dbName = 'megatools';
+const D = path.join(__dirname, 'data');
+
+if (!fs.existsSync(D)) fs.mkdirSync(D);
+
+let db = null;
+let client = null;
+let connected = false;
+
+// Memory cache — MongoDB থেকে লোড হয়, JSON-এ ফলব্যাক
+const cache = {};
+
+const collections = ['users','links','sessions','trash','menuItems','routeLogs','clicks','referrals'];
+
+async function connect() {
+  if (connected) return;
+  try {
+    client = new MongoClient(uri);
+    await client.connect();
+    db = client.db(dbName);
+    console.log('MongoDB connected to', dbName);
+    
+    // Cache-এ MongoDB ডাটা লোড
+    for (const col of collections) {
+      try {
+        const data = await db.collection(col).find().toArray();
+        cache[col] = data;
+      } catch(e) {
+        // MongoDB খালি থাকলে JSON থেকে লোড
+        cache[col] = readJsonFallback(col);
+      }
+    }
+    connected = true;
+  } catch(e) {
+    console.error('MongoDB connect error, using JSON fallback:', e.message);
+    // MongoDB fail → JSON fallback
+    for (const col of collections) {
+      cache[col] = readJsonFallback(col);
+    }
+    connected = true;
+  }
+}
+
+function readJsonFallback(name) {
+  const p = path.join(D, name + '.json');
+  if (!fs.existsSync(p)) return [];
+  try { return JSON.parse(fs.readFileSync(p, 'utf-8')); }
+  catch(e) { return []; }
+}
+
+function saveJsonBackup(name, data) {
+  try { fs.writeFileSync(path.join(D, name + '.json'), JSON.stringify(data, null, 2), 'utf-8'); }
+  catch(e) {}
+}
+
+async function saveToMongo(name, data) {
+  if (!db) return;
+  try {
+    const col = db.collection(name);
+    await col.deleteMany({});
+    if (data.length > 0) await col.insertMany(data);
+  } catch(e) {}
+}
+
+function makeAccessor(name) {
+  return {
+    read: () => cache[name] || [],
+    write: (data) => {
+      cache[name] = data;
+      saveJsonBackup(name, data);
+      saveToMongo(name, data);
+    }
+  };
+}
+
+module.exports = {
+  connect,
+  users: makeAccessor('users'),
+  links: makeAccessor('links'),
+  sessions: makeAccessor('sessions'),
+  trash: makeAccessor('trash'),
+  menuItems: makeAccessor('menuItems'),
+  routeLogs: makeAccessor('routeLogs'),
+  clicks: makeAccessor('clicks'),
+  referrals: makeAccessor('referrals'),
+  readJson: (f) => cache[f] || [],
+  writeJson: (f, d) => {
+    cache[f] = d;
+    saveJsonBackup(f, d);
+    saveToMongo(f, d);
+  }
+};

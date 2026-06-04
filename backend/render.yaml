@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: megatools-api
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        value: u8XkL9pQ2mR5vY7tW3zA6cD4fG1hJ9nB8sE5uM2oI6kP4rT7yV0wX9
+      - key: FRONTEND_URL
+        value: PLACEHOLDER_FRONTEND_URL
+      - key: MONGODB_URI
+        value: mongodb+srv://megatoolssite_db_user:ZkFQ0bZGvKPUum98@cluster0.e06rtbz.mongodb.net/megatools?retryWrites=true&w=majority&appName=Cluster0
+      - key: RATE_LIMIT_WINDOW_MS
+        value: "900000"
+      - key: RATE_LIMIT_MAX
+        value: "100"
