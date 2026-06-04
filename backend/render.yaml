@@ -12,7 +12,7 @@ services:
       - key: JWT_SECRET
         value: u8XkL9pQ2mR5vY7tW3zA6cD4fG1hJ9nB8sE5uM2oI6kP4rT7yV0wX9
       - key: FRONTEND_URL
-        value: PLACEHOLDER_FRONTEND_URL
+        value: https://mega-tools.online
       - key: MONGODB_URI
         value: mongodb+srv://megatoolssite_db_user:ZkFQ0bZGvKPUum98@cluster0.e06rtbz.mongodb.net/megatools?retryWrites=true&w=majority&appName=Cluster0
       - key: RATE_LIMIT_WINDOW_MS
