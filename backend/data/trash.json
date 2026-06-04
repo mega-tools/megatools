@@ -1766,5 +1766,44 @@
     "deletedAt": "2026-06-05T18:30:23.986Z",
     "clearedBy": "system",
     "manualCleared": false
+  },
+  {
+    "_id": "t_1780577082490_y5a2",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1780577043327",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-06-04T12:44:42.490Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1780577082492_kl28",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1780503939889",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-06-04T12:44:42.492Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
+  },
+  {
+    "_id": "t_1780577082493_ss8u",
+    "trackingCode": "ka4rb4lf7",
+    "originalId": "s_1780503918317",
+    "activity": "Cleared",
+    "systemData": {
+      "ip": "::1",
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb"
+    },
+    "deletedAt": "2026-06-04T12:44:42.493Z",
+    "clearedBy": "u_admin",
+    "manualCleared": true
   }
 ]
