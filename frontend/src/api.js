@@ -1,9 +1,7 @@
 import axios from "axios";
 
-const API_URL = import.meta.env.VITE_API_URL || "";
-
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://megatools-v1.onrender.com/api",
   withCredentials: true,
   timeout: 15000,
   headers: { "Content-Type": "application/json" }

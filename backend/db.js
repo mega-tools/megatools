@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb');
 const fs = require('fs');
 const path = require('path');
 
-const uri = null; // disabled
+const uri = process.env.MONGODB_URI || null;
 const dbName = 'megatools';
 const D = path.join(__dirname, 'data');
 

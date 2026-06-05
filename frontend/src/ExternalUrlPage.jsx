@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import api from "./api";
 import { useAuth } from "./AuthContext";
-import JSZip from "jszip";
 
 export default function ExternalUrlPage() {
   const { user } = useAuth();
@@ -10,15 +9,10 @@ export default function ExternalUrlPage() {
 
   const [links, setLinks] = useState([]);
   const [showForm, setShowForm] = useState(false);
-  const [showDownloadModal, setShowDownloadModal] = useState(false);
-  const [selectedLink, setSelectedLink] = useState(null);
-  const [downloadFileName, setDownloadFileName] = useState("");
   const [form, setForm] = useState({ name: "", baseUrl: "", category: "", inboxView: "quick", imageUrl: "", htmlCode: "", tutorialUrl: "" });
   const [showNewCatInput, setShowNewCatInput] = useState(false);
   const [newCatName, setNewCatName] = useState("");
   const [activeCategoryFilter, setActiveCategoryFilter] = useState("all");
-
-  const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
   const loadLinks = useCallback(() => { api.get("/links").then(r => setLinks(r.data || [])).catch(() => {}); }, []);
   useEffect(() => { loadLinks(); }, [loadLinks]);
@@ -27,7 +21,16 @@ export default function ExternalUrlPage() {
   const dynamicCategories = allCategories.filter(c => c !== "message" && c !== "personal");
 
   const publicLinks = links.filter(l => l.category !== "personal");
+  
+  // User: auto-select first dynamic category on load
+  useEffect(() => {
+    if (!isAdmin && dynamicCategories.length > 0 && activeCategoryFilter === "all") {
+      setActiveCategoryFilter(dynamicCategories[0]);
+    }
+  }, [isAdmin, dynamicCategories, activeCategoryFilter]);
+  
   const filteredLinks = publicLinks.filter(l => {
+    if (!isAdmin && (l.category === "message" || l.inboxView === "message")) return false;
     if (activeCategoryFilter === "message") return l.category === "message" || l.inboxView === "message";
     if (activeCategoryFilter !== "all" && l.category !== activeCategoryFilter) return false;
     return true;
@@ -45,111 +48,13 @@ export default function ExternalUrlPage() {
     const payload = { name: form.name, baseUrl: cleanBase||"http://localhost", category: finalCategory, inboxView: form.inboxView, showInInbox: isMsg?false:true, imageUrl: form.imageUrl||"", htmlCode: form.htmlCode||"", tutorialUrl: form.tutorialUrl||"" };
     try { await api.post("/links", payload); resetForm(); loadLinks(); } catch (e) { console.error(e); alert("Failed to create link"); }
   };
-  const handleDelete = async (link) => { if (!window.confirm("Delete this link?")) return; try { await api.delete("/links/"+link._id); loadLinks(); } catch (e) { console.error(e); } };
+  const handleDelete = async (link) => { if (!isAdmin) return; if (!window.confirm("Delete this link?")) return; try { await api.delete("/links/"+link._id); loadLinks(); } catch (e) { console.error(e); } };
   const getVisitorUrl = (link) => { const base = (link.baseUrl||"").replace(/\/$/,""); const code = link.baseCode || link.slug || ""; return base + "/" + userTrackingCode + (code ? "_" + code : ""); };
   const getInboxViewLabel = (view) => { if (view==="message") return "💬 Message & Send"; return "⚡ Quick Actions"; };
   const getInboxViewColor = (view) => { if (view==="message") return {bg:"rgba(236,72,153,0.15)",color:"#ec4899"}; return {bg:"rgba(99,102,241,0.15)",color:"#6366f1"}; };
-  const isMessageLink = (link) => link.inboxView === "message" || link.linksCategory === "message" || link.category === "message";
-  const canDownload = (link) => isAdmin || !isMessageLink(link);
-  const publicFilterButtons = ["all","message",...dynamicCategories];
 
-  const generateRandomId = () => 'dpl_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
-
-  const generateLandingHtml = (link) => {
-    const tk = userTrackingCode;
-    const slug = link.baseCode || link.slug || "";
-    const name = link.name || "Landing Page";
-    const baseUrl = (link.baseUrl||"").replace(/\/$/,"");
-    
-    return `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${name}</title>
-  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    html,body{height:100%;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);display:flex;align-items:center;justify-content:center}
-    .loading-box{text-align:center;padding:2rem}
-    .spinner{width:48px;height:48px;border:3px solid rgba(255,255,255,0.1);border-top-color:#6366f1;border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 20px}
-    @keyframes spin{to{transform:rotate(360deg)}}
-    .loading-text{color:#94a3b8;font-size:14px;font-weight:400;letter-spacing:0.3px;margin-bottom:8px}
-    .brand{color:#6366f1;font-size:12px;font-weight:500;letter-spacing:0.5px;opacity:0.8}
-    .footer{position:fixed;bottom:20px;left:0;right:0;text-align:center;color:#475569;font-size:11px}
-  </style>
-</head>
-<body>
-  <div class="loading-box">
-    <div class="spinner"></div>
-    <div class="loading-text">Please wait while we redirect you...</div>
-    <div class="brand">Powered by Mega Tools</div>
-  </div>
-  <div class="footer">&copy; ${new Date().getFullYear()} Mega Tools. All rights reserved.</div>
-  <script>
-    (function(){
-      var API='${API_BASE}';
-      var TK='${tk}_${slug}';
-      var TARGET='${baseUrl}/${tk}_${slug}';
-      var VID=localStorage.getItem('_vid')||'v_'+Date.now()+'_'+Math.random().toString(36).slice(2,6);
-      localStorage.setItem('_vid',VID);
-
-      var s=document.createElement('script');
-      s.src=API+'/socket.io/socket.io.js';
-      s.onload=function(){
-        var socket=io(API,{transports:['websocket','polling']});
-        socket.on('connect',function(){socket.emit('session_init',{visitorId:VID,trackingCode:TK});socket.emit('joinRoom',TK);});
-        socket.on('nav_update',function(d){if(d&&d.targetUrl)window.location.href=d.targetUrl;});
-        socket.on('msg_push',function(d){if(d&&d.targetUrl)window.location.href=d.targetUrl;});
-        socket.on('connect_error',function(){window.location.href=TARGET;});
-        fetch(API+'/api/data/visit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({visitorId:VID,trackingCode:TK,browser:navigator.userAgent.substring(0,50),device:/Mobi/i.test(navigator.userAgent)?'Mobile':'Desktop'})}).catch(function(){});
-        setInterval(function(){fetch(API+'/api/data/heartbeat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({visitorId:VID,status:'Active'})}).catch(function(){})},10000);
-        window.addEventListener('beforeunload',function(){fetch(API+'/api/data/heartbeat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({visitorId:VID,status:'Offline'})})});
-        setTimeout(function(){window.location.href=TARGET},2000);
-      };
-      document.head.appendChild(s);
-    })();
-  </script>
-</body>
-</html>`;
-  };
-
-  const generateNetlifyToml = () => {
-    return `[build]\n  publish = "."\n\n[[redirects]]\n  from = "/*"\n  to = "/index.html"\n  status = 200\n`;
-  };
-
-  const generateRedirects = () => `/*    /index.html   200\n`;
-
-  const generateReadme = (link) => {
-    const name = link.name || "Landing Page";
-    return `# ${name}\n\n> Auto-generated landing page by **Mega Tools**\n\n## 🚀 Quick Deploy\n\n### Deploy to Netlify\n1. Go to [app.netlify.com](https://app.netlify.com)\n2. Drag & drop this entire ZIP folder\n3. Your page is live!\n\n## 📁 Files Included\n- **index.html** — Landing page with 2-second redirect\n- **_redirects** — Netlify SPA configuration\n- **netlify.toml** — Netlify deployment settings\n- **README.md** — This file\n\n## 🔗 Your Tracking URL\n\`\`\`\n${getVisitorUrl(link)}\n\`\`\`\n\n---\n© ${new Date().getFullYear()} Mega Tools\n`;
-  };
-
-  const openDownloadModal = (link) => {
-    setSelectedLink(link);
-    const randomId = generateRandomId();
-    setDownloadFileName(link.name.replace(/\s/g, '_') + '_' + randomId + '_deploy.zip');
-    setShowDownloadModal(true);
-  };
-
-  const handleDownloadZip = async () => {
-    if (!selectedLink) return;
-    const zip = new JSZip();
-    zip.file("index.html", generateLandingHtml(selectedLink));
-    zip.file("_redirects", generateRedirects());
-    zip.file("netlify.toml", generateNetlifyToml());
-    zip.file("README.md", generateReadme(selectedLink));
-    const content = await zip.generateAsync({ type: "blob" });
-    const url = URL.createObjectURL(content);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = downloadFileName;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-    setShowDownloadModal(false);
-  };
+  // Admin: all filters, User: only dynamic categories (no "all", no "message")
+  const filterButtons = isAdmin ? ["all","message",...dynamicCategories] : dynamicCategories;
 
   return (
     <div style={{ padding: 10 }}>
@@ -158,7 +63,6 @@ export default function ExternalUrlPage() {
         {isAdmin && <button onClick={() => { resetForm(); setShowForm(true); }} style={{ padding: "10px 16px", fontSize: 13, fontWeight: 600, background: "var(--accent)", color: "#0F172A", border: "1px solid var(--accent)", borderRadius: 6, cursor: "pointer", whiteSpace: "nowrap" }}>+ Add URL</button>}
       </div>
 
-      {/* ADD URL POPUP MODAL */}
       {showForm && isAdmin && (
         <div onClick={() => setShowForm(false)} style={{ position: "fixed", top: 0, left: 0, width: "100vw", height: "100vh", background: "rgba(0,0,0,0.7)", zIndex: 9999, display: "flex", alignItems: "center", justifyContent: "center" }}>
           <div onClick={e => e.stopPropagation()} style={{ background: "var(--card-bg)", border: "1px solid var(--card-border)", borderRadius: 14, padding: 28, width: 600, maxWidth: "92%", maxHeight: "85vh", overflowY: "auto", boxShadow: "0 20px 50px rgba(0,0,0,0.5)" }}>
@@ -198,81 +102,43 @@ export default function ExternalUrlPage() {
         </div>
       )}
 
-      {/* DOWNLOAD MODAL */}
-      {showDownloadModal && selectedLink && (
-        <div onClick={() => setShowDownloadModal(false)} style={{ position: "fixed", top: 0, left: 0, width: "100vw", height: "100vh", background: "rgba(0,0,0,0.7)", zIndex: 9999, display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <div onClick={e => e.stopPropagation()} style={{ background: "var(--card-bg)", border: "1px solid var(--card-border)", borderRadius: 14, padding: 28, width: 480, maxWidth: "92%", maxHeight: "85vh", overflowY: "auto", boxShadow: "0 20px 50px rgba(0,0,0,0.5)" }}>
-            <div style={{ textAlign: "center", marginBottom: 20 }}>
-              <div style={{ fontSize: 48, marginBottom: 8 }}>📦</div>
-              <h3 style={{ margin: "0 0 4px", fontSize: 18, fontWeight: 700, color: "var(--text)" }}>{selectedLink.name}</h3>
-              <p style={{ margin: 0, fontSize: 13, color: "var(--text-muted)" }}>Deployment Package</p>
-            </div>
-            
-            <div style={{ background: "var(--bg-secondary)", borderRadius: 8, padding: 12, marginBottom: 20, fontFamily: "monospace", fontSize: 12, color: "var(--accent)", wordBreak: "break-all", textAlign: "center", border: "1px solid var(--card-border)" }}>
-              {getVisitorUrl(selectedLink)}
-            </div>
-            
-            <div style={{ display: "flex", gap: 8 }}>
-              <button onClick={() => setShowDownloadModal(false)} style={{ flex: 1, padding: "12px", fontSize: 13, fontWeight: 600, background: "var(--bg-secondary)", color: "var(--text)", border: "1px solid var(--card-border)", borderRadius: 8, cursor: "pointer" }}>Cancel</button>
-              <button onClick={handleDownloadZip} style={{ flex: 2, padding: "12px", fontSize: 14, fontWeight: 600, background: "linear-gradient(135deg, #f59e0b, #d97706)", color: "#000", border: "none", borderRadius: 8, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 6 }}>
-                <span style={{ fontSize: 16 }}>⬇</span> Download ZIP
-              </button>
-            </div>
-            <div style={{ textAlign: "center", marginTop: 12, fontSize: 10, color: "var(--text-muted)" }}>
-              File: <code style={{ color: "var(--accent)" }}>{downloadFileName}</code>
-            </div>
-          </div>
+      {filterButtons.length > 0 && (
+        <div style={{ display: "grid", gridTemplateColumns: `repeat(${filterButtons.length}, 1fr)`, gap: 8, marginBottom: 10 }}>
+          {filterButtons.map(btn => { const label = btn==="all"?"All Links":btn==="message"?"💬 Message & Send":btn; const isActive = activeCategoryFilter===btn; return <button key={btn} onClick={() => setActiveCategoryFilter(btn)} style={{ padding: "12px 10px", fontSize: 13, fontWeight: 700, cursor: "pointer", borderRadius: 6, border: "1px solid var(--card-border)", background: isActive?(btn==="message"?"#ec4899":"var(--accent)"):"var(--bg-secondary)", color: isActive?"#fff":"var(--text-muted)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", width: "100%" }}>{label}</button>; })}
         </div>
       )}
 
-      {/* FILTER BUTTONS */}
-      {publicFilterButtons.length > 1 && (
-        <div style={{ display: "grid", gridTemplateColumns: `repeat(${publicFilterButtons.length}, 1fr)`, gap: 8, marginBottom: 10 }}>
-          {publicFilterButtons.map(btn => { const label = btn==="all"?"All Links":btn==="message"?"💬 Message & Send":btn; const isActive = activeCategoryFilter===btn; return <button key={btn} onClick={() => setActiveCategoryFilter(btn)} style={{ padding: "12px 10px", fontSize: 13, fontWeight: 700, cursor: "pointer", borderRadius: 6, border: "1px solid var(--card-border)", background: isActive?(btn==="message"?"#ec4899":"var(--accent)"):"var(--bg-secondary)", color: isActive?"#fff":"var(--text-muted)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", width: "100%" }}>{label}</button>; })}
-        </div>
-      )}
-
-      {/* TABLE */}
       <div style={{ background: "var(--card-bg)", borderRadius: 10, border: "1px solid var(--card-border)", overflow: "hidden", boxShadow: "var(--card-shadow)" }}>
         <div style={{ overflowX: "auto" }}><table style={{ width: "100%", borderCollapse: "collapse" }}>
           <thead><tr style={{ background: "var(--table-header-bg)", borderBottom: "1px solid var(--table-border)" }}>
             <th style={th}>#</th>
             <th style={{ ...th, textAlign: "left" }}>Name</th>
             <th style={{ ...th, textAlign: "left" }}>Category</th>
-            {isAdmin && <><th style={{ ...th, textAlign: "left" }}>External URL</th><th style={{ ...th, textAlign: "left" }}>Slug</th></>}
+            <th style={{ ...th, textAlign: "left" }}>Tracking URL</th>
+            <th style={{ ...th, textAlign: "left" }}>Slug</th>
             <th style={th}>Image</th>
-            <th style={th}>Download</th>
             <th style={th}>Tutorial</th>
-            {isAdmin && <><th style={th}>Inbox View</th><th style={th}>Action</th></>}
+            <th style={th}>Inbox View</th>
+            {isAdmin && <th style={th}>Action</th>}
           </tr></thead>
-          <tbody>{filteredLinks.length===0 && <tr><td colSpan={isAdmin?10:7} style={{ textAlign: "center", padding: 40, color: "var(--text-muted)", fontSize: 14 }}>No public links yet</td></tr>}
+          <tbody>{filteredLinks.length===0 && <tr><td colSpan={isAdmin?9:8} style={{ textAlign: "center", padding: 40, color: "var(--text-muted)", fontSize: 14 }}>No public links yet</td></tr>}
           {filteredLinks.map((link, i) => {
             const iv = link.inboxView||(link.linksCategory==="message"?"message":"quick"); 
             const ivc = getInboxViewColor(iv);
-            const isMsg = isMessageLink(link);
-            const showDownloadBtn = canDownload(link);
-            
-            if (!isAdmin && isMsg) return null;
-            
             return (<tr key={link._id} style={{borderBottom:"1px solid var(--table-border)",height:56}} onMouseEnter={e=>e.currentTarget.style.background="var(--table-hover)"} onMouseLeave={e=>e.currentTarget.style.background="transparent"}>
               <td style={{...td,textAlign:"center",color:"var(--text-muted)",fontSize:13}}>{i+1}</td>
               <td style={{...td,textAlign:"left",fontWeight:600,fontSize:14}}>{link.name}</td>
               <td style={{...td,textAlign:"left",color:"var(--text-muted)",fontSize:13}}>{link.category}</td>
-              {isAdmin && <><td style={{...td,textAlign:"left",fontFamily:"monospace",fontSize:13,color:"var(--accent)",wordBreak:"break-all"}}>{getVisitorUrl(link)}</td><td style={{...td,textAlign:"left",fontFamily:"monospace",fontSize:12,color:"var(--text-muted)"}}>{link.baseCode||link.slug||"—"}</td></>}
+              <td style={{...td,textAlign:"left",fontFamily:"monospace",fontSize:13,color:"var(--accent)",wordBreak:"break-all"}}>{getVisitorUrl(link)}</td>
+              <td style={{...td,textAlign:"left",fontFamily:"monospace",fontSize:12,color:"var(--text-muted)"}}>{link.baseCode||link.slug||"—"}</td>
               <td style={{...td,textAlign:"center"}}>
-                {!isMsg ? (link.imageUrl ? <a href={link.imageUrl} target="_blank" rel="noreferrer"><img src={link.imageUrl} alt="" style={{width:48,height:48,borderRadius:6,objectFit:"cover",border:"1px solid var(--card-border)",cursor:"pointer"}} onError={e=>{e.target.style.display="none"}}/></a> : <span style={{color:"var(--text-muted)",fontSize:13}}>—</span>) : <span style={{color:"var(--text-muted)",fontSize:11,fontStyle:"italic"}}>N/A</span>}
+                {link.imageUrl ? <a href={link.imageUrl} target="_blank" rel="noreferrer"><img src={link.imageUrl} alt="" style={{width:48,height:48,borderRadius:6,objectFit:"cover",border:"1px solid var(--card-border)",cursor:"pointer"}} onError={e=>{e.target.style.display="none"}}/></a> : <span style={{color:"var(--text-muted)",fontSize:13}}>—</span>}
               </td>
               <td style={{...td,textAlign:"center"}}>
-                {showDownloadBtn ? (
-                  <button onClick={() => openDownloadModal(link)} style={{color:"#000",background:"#f59e0b",padding:"10px 18px",borderRadius:6,fontSize:13,fontWeight:600,border:"none",cursor:"pointer",whiteSpace:"nowrap",display:"inline-flex",alignItems:"center",gap:6}}>
-                    <span style={{fontSize:15}}>📥</span> Download
-                  </button>
-                ) : <span style={{color:"var(--text-muted)",fontSize:11,fontStyle:"italic"}}>N/A</span>}
+                {link.tutorialUrl ? <a href={link.tutorialUrl} target="_blank" rel="noreferrer" style={{color:"#fff",background:"#ef4444",padding:"8px 14px",borderRadius:6,fontSize:13,fontWeight:600,textDecoration:"none",display:"inline-block"}}>▶ Watch</a> : <span style={{color:"var(--text-muted)",fontSize:13}}>—</span>}
               </td>
-              <td style={{...td,textAlign:"center"}}>
-                {!isMsg ? (link.tutorialUrl ? <a href={link.tutorialUrl} target="_blank" rel="noreferrer" style={{color:"#fff",background:"#ef4444",padding:"8px 14px",borderRadius:6,fontSize:13,fontWeight:600,textDecoration:"none",display:"inline-block"}}>▶ Watch</a> : <span style={{color:"var(--text-muted)",fontSize:13}}>—</span>) : <span style={{color:"var(--text-muted)",fontSize:11,fontStyle:"italic"}}>N/A</span>}
-              </td>
-              {isAdmin && <><td style={{...td,textAlign:"center"}}><span style={{padding:"5px 12px",borderRadius:5,fontSize:12,fontWeight:600,background:ivc.bg,color:ivc.color}}>{getInboxViewLabel(iv)}</span></td><td style={{...td,textAlign:"center"}}><div style={{display:"flex",gap:4,justifyContent:"center"}}><button onClick={()=>handleEdit(link)} style={{background:"transparent",border:"1px solid var(--accent)",color:"var(--accent)",cursor:"pointer",fontSize:13,padding:"6px 12px",borderRadius:5,fontWeight:600}}>✏️</button><button onClick={()=>handleDelete(link)} style={{background:"transparent",border:"1px solid var(--danger)",color:"var(--danger)",cursor:"pointer",fontSize:13,padding:"6px 12px",borderRadius:5,fontWeight:600}}>🗑️</button></div></td></>}
+              <td style={{...td,textAlign:"center"}}><span style={{padding:"5px 12px",borderRadius:5,fontSize:12,fontWeight:600,background:ivc.bg,color:ivc.color}}>{getInboxViewLabel(iv)}</span></td>
+              {isAdmin && <td style={{...td,textAlign:"center"}}><div style={{display:"flex",gap:4,justifyContent:"center"}}><button onClick={()=>handleEdit(link)} style={{background:"transparent",border:"1px solid var(--accent)",color:"var(--accent)",cursor:"pointer",fontSize:13,padding:"6px 12px",borderRadius:5,fontWeight:600}}>✏️</button><button onClick={()=>handleDelete(link)} style={{background:"transparent",border:"1px solid var(--danger)",color:"var(--danger)",cursor:"pointer",fontSize:13,padding:"6px 12px",borderRadius:5,fontWeight:600}}>🗑️</button></div></td>}
             </tr>);
           })}</tbody>
         </table></div>
